@@ -5,6 +5,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .container {
+        display: flex;
+      }
+      .sidebar {
+        width: 30%;
+        display: flex;
+      }
+
+      .sidebar .center {
+        height: 100vh;
+        background: rgb(124, 124, 124);
+      }
+
+      .sidebar .top {
+        background: #ffa;
+        display: flex;
+        justify-content: center;
+      }
+
+      .main {
+        width: 100%;
+        display: block;
+      }
+
+      .main .top {
+        display: flex;
+        background-image: url('https://picsum.photos/id/684/600/400');
+        height: 300px;
+        justify-content: center;
+        align-content: center;
+      }
+
+      .main .top img {
+        width: 200px;
+        height: 200px;
+      }
+
+      .top img {
+        margin: 10px 15px;
+        border-radius: 50%;
+        width: 30%;
+        height: 30%;
+      }
+
+      .top h3 {
+        align-self: flex-end;
+      }
+      .main .down {
+      }
+
+      .sidebar {
+        display: block;
+      }
+
+      .sidebar .top h3 {
+        display: inline;
+      }
+
+      .sidebar .center a {
+        display: block;
+        text-decoration: none;
+        color: #fff;
+        font-size: 24px;
+      }
+
+      .btn {
+        display: inline-block;
+        color: #fff;
+        text-decoration: none;
+        border: 1px solid gray;
+        background: gray;
+        border-radius: 5%;
+        text-align: center;
+        padding: 5px 10px;
+        box-shadow: 2px 2px black;
+      }
+
+      .btn:active {
+        background: grey;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <div class="top">
+          <img src="https://picsum.photos/id/685/40/40" alt="" />
+          <h3>LELE</h3>
+        </div>
+
+        <div class="center">
+          <a href="">home</a>
+          <a href="">page1</a>
+          <a href="">page2</a>
+          <a href="">page3</a>
+        </div>
+
+        <div class="bottom"></div>
+      </div>
+
+      <div class="main">
+        <div class="top">
+          <img src="https://picsum.photos/id/687/400/400" alt="" />
+          <div class="content">
+            <h2>LELE</h2>
+            <p>正在努力邁向前端工程師之路</p>
+            <p>iT鐵人賽持續衝刺中</p>
+          </div>
+        </div>
+
+        <div class="down">
+          <h1>最新文章</h1>
+          <p>
+            Day01:Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Accusantium, illum!
+          </p>
+          <p>
+            Day02:Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Accusantium, illum!
+          </p>
+          <p>
+            Day03:Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Accusantium, illum!
+          </p>
+          <p>
+            Day04:Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Accusantium, illum!
+          </p>
+          <a href="#" class="btn">more</a>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
