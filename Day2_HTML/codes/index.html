@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .header {
+        display: flex;
+        margin: 14px;
+      }
+      .header h1 {
+        font-size: 22px;
+        margin-right: auto;
+      }
+
+      .header span {
+        margin: 0;
+      }
+      .tools .profile {
+        right: 0;
+      }
+      .btn {
+        display: inline-block;
+        border: 1px solid dodgerblue;
+        box-sizing: border-box;
+        padding: 5px 20px;
+        text-decoration: none;
+        margin: 10px 6px 8px 10px;
+      }
+
+      .main {
+        display: block;
+        width: 100%;
+      }
+
+      .main .input-area {
+        display: flex;
+      }
+
+      .main .lang-option {
+        display: flex;
+      }
+      .left {
+        width: 100%;
+      }
+      .right {
+        width: 100%;
+      }
+
+      .main .translate {
+        height: 200px;
+        width: 100%;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <a class="list-btn" href="#"> </a>
+      <h1>
+        <span style="color:dodgerblue">G</span>
+        <span style="color:red;">o</span>
+        <span style="color:yellow">o</span>
+        <span style="color:dodgerblue">g</span>
+        <span style="color: green;">l</span><span style="color: red;">e</span>
+        <span>翻譯</span>
+      </h1>
+      <div class="tools">Google 應用程式</div>
+      <div class="profile">Google 帳戶</div>
+    </header>
+    <hr />
+
+    <div class="option">
+      <a href="" class="btn">文字</a>
+      <a href="" class="btn">文件</a>
+    </div>
+
+    <div class="main">
+      <div class="lang-option">
+        <div class="left">
+          <a href="">偵測語言</a>
+          <a href="">英文</a>
+          <a href="">中文</a>
+          <a href="">日文</a>
+        </div>
+        <div class="right">
+          <a href="">中文(繁體)</a>
+          <a href="">英文</a>
+          <a href="">中文(簡體)</a>
+        </div>
+      </div>
+      <div class="input-area">
+        <div class="translate">
+          <input type="text" />
+          <a href="#">Close</a>
+        </div>
+        <div class="translate">
+          <input type="text" />
+          <a href="#">Close</a>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <a href="">翻譯紀錄</a>
+      <a href="">已儲存</a>
+      <a href="">社群</a>
+    </footer>
+  </body>
+</html>

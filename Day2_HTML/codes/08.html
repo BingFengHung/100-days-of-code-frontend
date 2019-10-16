@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 一個簡單的表 -->
+    <table>
+      <tr>
+        <th>Column1</th>
+        <th>Column2</th>
+      </tr>
+      <tr>
+        <td>data1</td>
+        <td>data2</td>
+      </tr>
+      <tr>
+        <td>data1</td>
+        <td>data2</td>
+      </tr>
+    </table>
+
+    <!-- 跨欄 -->
+    <table>
+      <tr>
+        <th>欄位1</th>
+        <th>欄位2</th>
+        <th>欄位3</th>
+      </tr>
+      <tr>
+        <td colspan="3">This second row spans all three columns</td>
+      </tr>
+      <tr>
+        <td rowspan="2">This cell spans two rows</td>
+        <td>Data 2</td>
+        <td>Data 2</td>
+      </tr>
+      <tr>
+        <td>Data 1</td>
+        <td>Data 2</td>
+      </tr>
+    </table>
+
+    <table>
+      <caption>
+        Table Title
+      </caption>
+      <!--| caption is the first child of table |-->
+      <thead>
+        <!--======================| thead is after caption |-->
+        <tr>
+          <th>Header content 1</th>
+          <th>Header content 2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!--======================| tbody is after thead |-->
+        <tr>
+          <td>Body content 1</td>
+          <td>Body content 2</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <!--| tfoot can be placed before or after tbody, but not in a group of tbody. |-->
+        <!--| Regardless where tfoot is in markup, it is rendered at the bottom. |-->
+        <tr>
+          <td>Footer content 1</td>
+          <td>Footer content 2</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <table>
+      <colgroup style="background-color: red;"></colgroup>
+      <colgroup style="background-color: green;"></colgroup>
+      <colgroup style="background-color: yellow;"></colgroup>
+      <tr>
+        <th>ISBN</th>
+        <th>Title</th>
+        <th>Price</th>
+      </tr>
+      <tr>
+        <td>3476896</td>
+        <td>My first HTML</td>
+        <td>$53</td>
+      </tr>
+      <tr>
+        <td>5869207</td>
+        <td>My first CSS</td>
+        <td>$49</td>
+      </tr>
+    </table>
+
+    <table>
+      <colgroup>
+        <col span="2" style="background-color: red;" />
+        <col style="background-color: green;" />
+      </colgroup>
+      <tr>
+        <th>ISBN</th>
+        <th>Title</th>
+        <th>Price</th>
+      </tr>
+      <tr>
+        <td>3476896</td>
+        <td>My first HTML</td>
+        <td>$53</td>
+      </tr>
+      <tr>
+        <td>5869207</td>
+        <td>My first CSS</td>
+        <td>$49</td>
+      </tr>
+    </table>
+
+    <table>
+      <thead>
+        <tr>
+          <td></td>
+          <th scope="col">Column Heading 1</th>
+          <th scope="col">Column Heading 2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Row Heading 1</th>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th scope="row">Row Heading 1</th>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
