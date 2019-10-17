@@ -82,7 +82,7 @@ noscript 元素顯示定義內容，當使用者的腳本不可使用或是瀏�
 ```
 
 #### 12.3 Favicon
-檔案名稱 favicon.ico 如果放在網站的根目錄，會被子動的載入，而不需要 `<link>` 標籤
+檔案名稱 favicon.ico 如果放在網站的根目錄，會被自動的載入，而不需要 `<link>` 標籤
 
 #### 12.4 Alternative CSS
 
@@ -97,8 +97,6 @@ noscript 李面的內容會在 javascript 在當前頁面禁止使用時顯示�
 </script>
 <noscript>This browser does not support JavaScript</script>
 ```
-
-
 #### 13.2 Linking to an external JavaScript file
 ```html
 <script src='example.js'></script>

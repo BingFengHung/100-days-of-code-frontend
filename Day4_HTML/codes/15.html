@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <img
+      sizes="(min-width:1200px) 580px
+           (min-width:640px) 48vw,
+           98vw"
+      src="https://picsum.photos/id/685/300/200"
+      srcset="
+        https://picsum.photos/id/686/300/200  500w,
+        https://picsum.photos/id/687/400/300 1000w,
+        https://picsum.photos/id/688/500/400 1500w
+      "
+      alt=""
+    />
+
+    <img
+      src="http://jaced.com/blogpix/2007/trisquarecircle/002.gif"
+      usemap="#shapes"
+    />
+    <map name="shapes">
+      <area
+        shape="polygon"
+        coords="79,6,5,134,153,134"
+        href="http://google.com/"
+      />
+      <area shape="rectangle" coords="177,6,306,134" href="http://gmail.com/" />
+      <area shape="circle" coords="397,71,65" />
+    </map>
+    <input size="50" style="font-size: 24px" ; value="abc" />
+
+    <input type="checkbox" value="on" />
+    <input name="a" type="radio" />
+    <input name="a" type="radio" checked />
+    <label>
+      <input type="radio" name="color" value="#f00" />
+      Red
+    </label>
+
+    <div>
+      <fieldset>
+        <legend>Theme color:</legend>
+        <p>
+          <input type="radio" name="color" id="red" value="#F00" />
+          <label for="red">Red</label>
+        </p>
+        <p>
+          <input type="radio" name="color" id="green" value="#0F0" />
+          <label for="green">Green</label>
+        </p>
+        <p>
+          <input type="radio" name="color" id="blue" value="#00F" />
+          <label for="blue">Blue</label>
+        </p>
+      </fieldset>
+    </div>
+  </body>
+</html>
