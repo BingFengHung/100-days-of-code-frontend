@@ -87,6 +87,7 @@ sizes 像是媒體查詢，描述圖像佔據 viewport 的空間
 #### 16.1 Introduction to Image Maps
 
 image maps 像是 image 具有可點擊的區域，點擊圖片超連結到指定的網頁
+![](images/2019-10-18-16-39-55.png)
 ![](images/2019-10-17-21-54-03.png)
 http://www.tutorialspark.com/html5/HTML5_Images_Image_Map_Demo.php
 

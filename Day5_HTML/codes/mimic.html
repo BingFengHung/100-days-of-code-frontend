@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        background: #34495e;
+      }
+
+      .eyes {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        text-align: center;
+      }
+
+      .eye {
+        width: 240px;
+        height: 120px;
+        background: #fff;
+        display: inline-block;
+        margin: 40px;
+        border-radius: 50%;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .ball {
+        width: 40px;
+        height: 40px;
+        background: #000;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        border: 15px solid #333;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 參考 YouTube 影片 Darkcode-->
+    <!-- https://www.youtube.com/watch?v=AixAmLWzXYg -->
+    <div class="eyes">
+      <div class="eye">
+        <div class="ball"></div>
+      </div>
+
+      <div class="eye">
+        <div class="ball"></div>
+      </div>
+    </div>
+
+    <script>
+      var balls = document.getElementsByClassName('ball');
+
+      document.onmousemove = function() {
+        var x = (event.clientX * 100) / window.innerWidth + '%';
+
+        var y = (event.clientY * 100) / window.innerHeight + '%';
+
+        // event.clinetX => get the horizontal coordinate of the onmousemove
+        // event.clinetY => get the vertical coordinate of the onmousemove
+        // window.innerWidth => get the browser width
+        // window.innerHeight => get the browser height
+
+        for (var i = 0; i < 2; i++) {
+          balls[i].style.left = x;
+          balls[i].style.top = y;
+          balls[i].style.transform = 'translate(-' + x + ',-' + y + ')';
+        }
+      };
+    </script>
+  </body>
+</html>
