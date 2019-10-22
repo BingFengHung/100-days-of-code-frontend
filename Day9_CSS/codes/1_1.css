@@ -1,0 +1,12 @@
+@import 'font.css';
+h1 {
+  color: green;
+  text-decoration: underline;
+}
+p {
+  font-size: 25px;
+  /* 根據電腦是否有支援字形，從第一個設定的字形開始使用，如果
+  不支援就使用後面排序的字形，當然使用者的電腦可能沒有這些字形
+  我們也可以設定通用字形來使用 (serif, sans-serif, cursive, fantasy, monospace) 五種通用字形*/
+  font-family: 'Trebuchet MS', sans-serif;
+}
