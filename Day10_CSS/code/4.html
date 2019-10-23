@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      div[data-color*='val'] {
+        width: 300px;
+        background: green;
+      }
+      div[data-color^='val'] {
+        width: 300px;
+        background: blue;
+      }
+      div[data-color$='val'] {
+        width: 300px;
+        background: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div data-color="asdfval">
+      data-color 屬性值最後是 val
+    </div>
+    <div data-color="val-asdfa">
+      data-color 屬性值一開始是 val
+    </div>
+    <div data-color="asdavalasdfa">
+      data-color 屬性值再任意位置包含 val
+    </div>
+  </body>
+</html>
