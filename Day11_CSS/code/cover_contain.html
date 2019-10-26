@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=`, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      div > div {
+        background-image: url(http://i.stack.imgur.com/r5CAq.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: #ccc;
+        border: 1px solid;
+        width: 20em;
+        height: 10em;
+      }
+      div.contain {
+        background-size: contain;
+      }
+      div.cover {
+        background-size: cover;
+      }
+      /********************************************
+Additional styles for the explanation boxes
+*********************************************/
+      div > div {
+        margin: 0 1ex 1ex 0;
+        float: left;
+      }
+      div + div {
+        clear: both;
+        border-top: 1px dashed silver;
+        padding-top: 1ex;
+      }
+      div > div::after {
+        background-color: #000;
+        color: #fefefe;
+        margin: 1ex;
+        padding: 1ex;
+        opacity: 0.8;
+        display: block;
+        width: 10ex;
+        font-size: 0.7em;
+        content: attr(class);
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="contain"></div>
+      <p>
+        Note the grey background. The image does not cover the whole region, but
+        it's fully <em>contained</em>.
+      </p>
+    </div>
+    <div>
+      <div class="cover"></div>
+      <p>
+        Note the ducks/geese at the bottom of the image. Most of the water is
+        cut, as well as a part of the sky. You don't see the complete image
+        anymore, but neither do you see any background color; the image
+        <em>covers</em> all of the <code>&lt;div&gt;</code>.
+      </p>
+    </div>
+  </body>
+</html>
