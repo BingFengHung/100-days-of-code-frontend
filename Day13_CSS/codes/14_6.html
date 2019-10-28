@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      .wrapper {
+        width: 600px;
+        padding: 20px;
+        background-color: pink;
+        /* Floated elements don't use any height. Adding "overflow:hidden;" forces the
+parent element to expand to contain its floated children. */
+        overflow: hidden;
+      }
+      .sidebar {
+        width: 150px;
+        float: left;
+        background-color: blue;
+      }
+      .content {
+        width: 450px;
+        float: right;
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="sidebar">
+        <h2>Sidebar</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+          odio.
+        </p>
+      </div>
+      <div class="content">
+        <h1>Content</h1>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique
+          velit, assumenda unde in ea repellendus! Molestias rem maiores commodi
+          sequi iure placeat cupiditate temporibus labore? Repellat, ad nemo.
+          Cupiditate, quibusdam.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
