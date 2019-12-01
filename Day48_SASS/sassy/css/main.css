@@ -1,0 +1,19 @@
+body, html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Montserrat';
+  margin: 0;
+}
+
+body #bg {
+  -webkit-clip-path: polygon(100%, 0, 100%, 82%, 45% 100%, 0 100%, 0 0);
+          clip-path: polygon(100%, 0, 100%, 82%, 45% 100%, 0 100%, 0 0);
+  background-color: #005DFF;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+/*# sourceMappingURL=main.css.map */
